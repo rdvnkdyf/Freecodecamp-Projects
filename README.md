@@ -3,7 +3,7 @@ It will include projects found in tutorials on Freecodecamp.
 
 # Başlıklar 
 ## 1. Coding-interview-prep
-
+## 2. Scientific Computing with Python
 
 
 
