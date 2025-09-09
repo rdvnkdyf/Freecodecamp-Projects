@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Creature Search App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="container mx-4 sm:mx-0">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6">RPG Creature Search</h1>
+        <p class="text-center text-gray-600 mb-8">
+            Search for a creature by name or ID (e.g., Pyrolynx or 1).
+        </p>
+
+        <div class="flex flex-col items-center space-y-4 mb-8">
+            <label for="search-input" class="text-lg text-gray-700">Enter creature name or ID:</label>
+            <input type="text" id="search-input" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+            <button id="search-button" class="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Search
+            </button>
+        </div>
+
+        <div id="creature-card" class="bg-gray-50 border border-gray-200 rounded-lg p-6 hidden">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between mb-4">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <h2 id="creature-name" class="text-2xl font-bold uppercase"></h2>
+                    <p id="creature-id" class="text-lg text-gray-600"></p>
+                    <div id="types" class="flex flex-wrap mt-2 space-x-2"></div>
+                </div>
+                <div id="creature-img-container" class="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
+                    <img id="creature-img" class="max-w-full max-h-full" alt="Creature Image">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <p id="weight" class="text-gray-700"></p>
+                    <p id="height" class="text-gray-700"></p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <p id="hp" class="text-gray-700"></p>
+                    <p id="attack" class="text-gray-700"></p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <p id="defense" class="text-gray-700"></p>
+                    <p id="special-attack" class="text-gray-700"></p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <p id="special-defense" class="text-gray-700"></p>
+                    <p id="speed" class="text-gray-700"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Telephone Number Validator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="container mx-4 sm:mx-0">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6">Telephone Number Validator</h1>
+        <p class="text-center text-gray-600 mb-8">
+            Enter a US phone number to check if it's valid.
+        </p>
+
+        <div class="flex flex-col items-center space-y-4">
+            <label for="user-input" class="text-lg text-gray-700">Enter a number:</label>
+            <input type="text" id="user-input" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+            
+            <div class="flex space-x-4">
+                <button id="check-btn" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Check
+                </button>
+                <button id="clear-btn" class="px-6 py-3 bg-gray-300 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+        <div id="results-div" class="message-box hidden"></div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

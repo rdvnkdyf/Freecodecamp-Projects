@@ -1,0 +1,19 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+.container {
+            max-width: 500px;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+        }
+.message-box {
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
